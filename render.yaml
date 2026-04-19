@@ -1,7 +1,7 @@
 services:
   - type: web
     name: genai-task-manager-backend
-    runtime: python
+    env: python
     buildCommand: pip install -r backend/requirements.txt
     startCommand: cd backend && python app.py
     envVars:
@@ -16,9 +16,8 @@ services:
       - key: ENABLE_SCHEDULER
         value: false
 
-  - type: web
+  - type: static
     name: genai-task-manager-frontend
-    runtime: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/build
     envVars:
