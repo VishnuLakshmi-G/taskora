@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.10",
+    "lucide-react": "^0.563.0",
+    "recharts": "^2.10.3"
+  }
+}
