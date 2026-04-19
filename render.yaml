@@ -1,7 +1,7 @@
 services:
   - type: web
     name: genai-task-manager-backend
-    runtime: python3
+    runtime: python
     buildCommand: pip install -r backend/requirements.txt
     startCommand: cd backend && python app.py
     envVars:
